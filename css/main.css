@@ -1,7 +1,8 @@
-body {
+.header {
   background-color: #7289da;
 }
 
 h1 {
   color: #fff;
+  line-height: 30
 }
