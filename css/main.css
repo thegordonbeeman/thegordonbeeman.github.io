@@ -1,8 +1,11 @@
-.header {
-  background-color: #7289da;
+.gen {
+  color: #d8e4ff;
 }
 
-h1 {
-  color: #fff;
-  line-height: 30
+.yel {
+  color: #fffd98;
+}
+
+body {
+  background-color: #28262c;
 }
