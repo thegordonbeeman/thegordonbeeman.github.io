@@ -1,2 +1,0 @@
-var names = [];
-var quotes = [];
