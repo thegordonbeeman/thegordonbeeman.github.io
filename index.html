@@ -5,13 +5,19 @@
 		<title>Gordon Beeman</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
 	</head>
 	<body>
 		<div id="navbar"></div>
 		<div id="header">
-			<img src="images/profile_picture.jpg" alt="Profile Picture">
-			<h1>Gordon Beeman</h1>
+			<img src="images/profile_picture.jpg" alt="Profile Picture" id="pfp">
+			<h1>Gordon Beeman </h1>
+			<iframe src="images/fr.svg" frameborder="0" id="fra"></iframe>
 		</div>
 		<div id="content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis eros placerat, mollis libero sed, tincidunt mauris. Sed neque felis, consequat nec augue sit amet, porttitor vestibulum metus. Quisque viverra, lorem eget suscipit lacinia, elit justo imperdiet ligula, eget euismod libero arcu a felis. Nulla dapibus eu dolor et sodales. Integer faucibus nisl justo, sed sagittis magna aliquam vel. Maecenas in leo erat. Duis feugiat consectetur tortor ut imperdiet. Vestibulum quis egestas dui. In vel euismod arcu, eget lobortis leo. Quisque ornare luctus purus, et aliquet odio malesuada at. Cras volutpat ultrices urna, a vulputate nibh molestie ut.
@@ -37,7 +43,7 @@
 				overflow: hidden;
 				height: 200px;
 			}
-			#header img {
+			#pfp {
 				border-radius: 50%;
 				margin-right: 60px;
 				float: left;
@@ -48,13 +54,21 @@
 			#header h1 {
 				color: azure;
 				margin-left: 15px;
+				margin-right: 60px;
+				float: left;
 				margin: 2px 0 0 0;
 				vertical-align: middle;
 				line-height: 200px;
 				font-family: "Poppins";
-				font-weight: bolder;
+				font-weight: bolder; 
 				font-size: 5rem;
 				text-shadow: 5px 5px 0 rgba(0,0,0,.2);
+			}
+			#fra {
+				margin: 83px 0px 67px -75px;
+				height: 50px;
+				bottom: 50px;
+				vertical-align: middle;
 			}
 
 			#content {
@@ -62,6 +76,7 @@
 				margin: 0 auto;
 				margin-top: -24px;
 				background-color: aliceblue;
+				box-shadow: 5px 2px rgba(0,0,0,.2), -5px 2px rgba(0,0,0,.2);
 			}
 			#content p {
 				color: #000;
