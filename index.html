@@ -13,20 +13,22 @@
 		<link rel="manifest" href="/favicon/site.webmanifest">
 	</head>
 	<body>
-		<div id="navbar"></div>
+		<div id="navbar">
+			<ul>
+				<li><a href="https://google.com">Google</a></li>
+				<li><a href="https://github.com/thegordonbeeman?tab=repositories">Repositories</a></li>
+				<li><a href="https://thegordonbeeman.github.io" class="active">Portfolio</a></li>
+			</ul>
+		</div>
 		<div id="header">
-			<img src="images/profile_picture.jpg" alt="Profile Picture">
+			<img src="images/profile_picture.jpg" alt="Profile Picture" id="pfp">
 			<h1>Gordon Beeman </h1>
+			<img src="images/headerpic.png" alt="Server" id="headerpic">
 		</div>
 		<div id="content">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis eros placerat, mollis libero sed, tincidunt mauris. Sed neque felis, consequat nec augue sit amet, porttitor vestibulum metus. Quisque viverra, lorem eget suscipit lacinia, elit justo imperdiet ligula, eget euismod libero arcu a felis. Nulla dapibus eu dolor et sodales. Integer faucibus nisl justo, sed sagittis magna aliquam vel. Maecenas in leo erat. Duis feugiat consectetur tortor ut imperdiet. Vestibulum quis egestas dui. In vel euismod arcu, eget lobortis leo. Quisque ornare luctus purus, et aliquet odio malesuada at. Cras volutpat ultrices urna, a vulputate nibh molestie ut.
+			<article>
 
-			Proin nibh est, eleifend eu arcu viverra, tempor scelerisque turpis. Praesent dictum ornare risus, id vehicula ipsum vehicula sit amet. Phasellus pharetra sapien sapien, vel hendrerit lectus lacinia et. Nulla nec bibendum nisl. Aenean quis sapien ut nisi rutrum euismod. Mauris ut consectetur sapien. Integer nec arcu eu nisl tempus interdum in hendrerit dolor. Aenean varius leo justo, in eleifend lectus vestibulum vitae. Fusce id viverra neque, ut accumsan enim. Maecenas sed eros et neque dictum efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla finibus maximus neque, at tincidunt tortor consectetur vel.
-			
-			Cras neque metus, rutrum id dolor vitae, laoreet tincidunt augue. Donec eu sodales libero, eget condimentum enim. Cras a tortor sed diam sagittis egestas ac non quam. Quisque sed ligula lorem. Proin lacinia lacus vestibulum ante vehicula, quis sagittis enim pellentesque. Etiam mattis nibh in lorem sollicitudin pulvinar. Curabitur euismod tellus magna, consectetur blandit nunc maximus at. Vivamus accumsan sodales odio id hendrerit. Nulla aliquet eros eget faucibus pharetra.
-			
-			Duis lacinia magna arcu, non malesuada orci condimentum nec. Suspendisse vitae erat interdum, tempor ex ornare, venenatis nulla. Integer vitae condimentum lorem. Cras venenatis mattis quam tempus tristique. In mollis sem at diam congue interdum. Quisque sit amet ipsum lacinia mi consequat mattis. Nulla scelerisque tellus in pretium faucibus. Morbi ullamcorper bibendum elit at laoreet. Vestibulum venenatis, ante pellentesque viverra maximus, urna risus convallis lorem, id sodales justo orci eu augue. Duis vel ipsum nunc. Donec sollicitudin leo sit amet venenatis faucibus. Ut aliquam a dolor in cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tristique commodo vestibulum. Ut vitae ullamcorper augue, sit amet gravida nunc. Etiam laoreet felis vel sapien placerat aliquet.
-			</p>
+			</article>
 		</div>
 
 		<style>
@@ -36,13 +38,49 @@
 				padding:0;
 			}
 
+			#navbar {
+				background-color: #0E63E3;
+				height: 52px;
+			}
+			#navbar ul {
+				margin: 0;
+				padding: 0;
+				top: 0;
+				overflow: hidden;
+				position: fixed;
+				list-style-type: none;
+			}
+			#navbar ul li {
+				float: left;
+			}
+			#navbar ul li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				
+				font-size: 1rem;
+				font-family: "Poppins";
+				font-weight: lighter;
+				text-shadow: 2px 2px 0 rgba(0,0,0,.2);
+			}
+			#navbar li a:hover:not(.active) {
+				background-color: #678BF5;
+			}
+
+			.active {
+				background-color: #E34B24;
+				color: black;
+			}
+
 			#header {
 				background-color: #498EF5;
 				padding: 60px;
 				overflow: hidden;
 				height: 200px;
 			}
-			#header img {
+			#pfp {
 				margin-right: 60px;
 				float: left;
 				border: 5px solid azure;
@@ -50,7 +88,7 @@
 				box-shadow: 5px 5px 0 rgba(0,0,0,.2);
 				transition: 100ms;
 			}
-			#header img:hover {
+			#pfp:hover {
 				border: 3px solid azure;
 				border-radius: 20%;
 				box-shadow: 7px 7px 0 rgba(0,0,0,.2);
@@ -67,6 +105,15 @@
 				font-weight: bolder; 
 				font-size: 5rem;
 				text-shadow: 5px 5px 0 rgba(0,0,0,.2);
+			}
+			#headerpic {
+				margin-left: 1000px;
+				margin-top: -400px;
+				height: 600px;
+				width: 1066px;
+				border-radius: 20%;
+				border: 5px solid azure;
+				transform: rotate(-15deg);
 			}
 
 			#content {
